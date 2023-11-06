@@ -24,7 +24,7 @@ class StringSplosion(SimpleTestCase):
         self.assertContains(response, "aababc")
 
     def test_string_splosion_ab(self):
-        response = self.client.get("/warmup-2/string-splosion/abc")
+        response = self.client.get("/warmup-2/string-splosion/ab")
         self.assertContains(response, "aab")
 
 class CatDog(SimpleTestCase):
